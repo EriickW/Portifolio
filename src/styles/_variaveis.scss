@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Kashima";
+    src: url(fonts/Kashima_Demo.otf);
+}
+:root{
+    --header: linear-gradient(to bottom, #ffffff, #bababa);
+    --bs-body-bg:#bababa;
+    --color-font:#4c4c4c;
+    --linhas:#7a7a7a;
+    --destaque:#d30726;
+}

@@ -1,0 +1,14 @@
+nav{
+    border-bottom: 1.5px solid var(--linhas);
+    ul{
+        li{
+            z-index: 1;
+            color: black;
+        }
+        li a:hover{
+           color: var(--destaque) !important;
+           border-bottom: 1px solid var(--destaque);
+        }
+    }
+   
+}
