@@ -3,7 +3,10 @@ nav{
     ul{
         li{
             z-index: 1;
-            color: black;
+        }
+        li a{
+            border-bottom: 1px solid transparent;
+            color: var(--color-font) !important;
         }
         li a:hover{
            color: var(--destaque) !important;

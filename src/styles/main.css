@@ -20,9 +20,11 @@
 
 p {
   font-family: 'Montserrat', sans-serif;
+  color: var(--color-font);
 }
 
 h1, h2, h3, h4 {
+  color: var(--title-color);
   font-family: 'Kashima', sans-serif;
 }
 
@@ -41,9 +43,9 @@ button {
 
 button:hover {
   background: var(--destaque);
-  color: white;
-  -webkit-box-shadow: 0px 0px 44px -3px rgba(211, 7, 38, 0.57);
-          box-shadow: 0px 0px 44px -3px rgba(211, 7, 38, 0.57);
+  color: var(--color-hover);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
 }
 
 .circle {
@@ -54,8 +56,8 @@ button:hover {
   opacity: 0.8;
   border-radius: 50%;
   z-index: 2;
-  -webkit-box-shadow: 0px 0px 44px -3px rgba(211, 7, 38, 0.57);
-          box-shadow: 0px 0px 44px -3px rgba(211, 7, 38, 0.57);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
 }
 
 .box-kanji {
@@ -82,7 +84,11 @@ nav {
 
 nav ul li {
   z-index: 1;
-  color: black;
+}
+
+nav ul li a {
+  border-bottom: 1px solid transparent;
+  color: var(--color-font) !important;
 }
 
 nav ul li a:hover {
@@ -95,13 +101,28 @@ nav ul li a:hover {
   src: url(fonts/Kashima_Demo.otf);
 }
 
-:root {
+.dark-mode {
+  --title-color:#f7f7f7;
+  --header: #222222;
+  --bs-body-bg:#222222;
+  --color-font:#b4b3b3;
+  --linhas:#7a7a7a;
+  --destaque:#b1eeb1;
+  --box:#9e1529;
+  --shadow:0px 0px 44px -3px #b1eeb1;
+  --color-hover:#222222;
+}
+
+.light-mode {
   --header: linear-gradient(to bottom, #ffffff, #bababa);
+  --title-color:#161616;
   --bs-body-bg:#bababa;
   --color-font:#4c4c4c;
   --linhas:#7a7a7a;
   --destaque:#d30726;
   --box:#9e1529;
+  --shadow:0px 0px 44px -3px rgba(211,7,38,0.57);
+  --color-hover:white;
 }
 
 header {
@@ -173,6 +194,10 @@ header .img-container-header {
   border-radius: 50%;
 }
 
+#sobre .social:hover {
+  color: var(--color-hover);
+}
+
 #tecnologias {
   min-height: 100vh;
 }
@@ -187,11 +212,11 @@ header .img-container-header {
 }
 
 #tecnologias .box {
-  border: 2px solid var(--box);
+  border: 2px solid var(--destaque);
   background: transparent;
   width: 150px;
   height: 150px;
-  color: var(--box);
+  color: var(--destaque);
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,10 +232,10 @@ header .img-container-header {
 }
 
 #tecnologias .box:hover {
-  background: var(--box);
-  color: white;
-  -webkit-box-shadow: 0px 0px 44px -3px rgba(211, 7, 38, 0.57);
-          box-shadow: 0px 0px 44px -3px rgba(211, 7, 38, 0.57);
+  background: var(--destaque);
+  color: var(--color-hover);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
 }
 
 .sec-project {
@@ -267,10 +292,13 @@ header .img-container-header {
 }
 
 .sec-project .div-project .project:hover {
-  border: 2px solid var(--box);
+  border: 2px solid var(--destaque);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+.sec-project .div-project .project:hover h3, .sec-project .div-project .project:hover p {
   color: white;
-  -webkit-box-shadow: 0px 0px 44px -3px rgba(211, 7, 38, 0.57);
-          box-shadow: 0px 0px 44px -3px rgba(211, 7, 38, 0.57);
 }
 
 .sec-project .div-project button {

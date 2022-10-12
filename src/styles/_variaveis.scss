@@ -3,10 +3,27 @@
     src: url(fonts/Kashima_Demo.otf);
 }
 :root{
+   
+}
+.dark-mode{
+    --title-color:#f7f7f7;
+    --header: #222222;
+    --bs-body-bg:#222222;
+    --color-font:#b4b3b3;
+    --linhas:#7a7a7a;
+    --destaque:#b1eeb1;
+    --box:#9e1529;
+    --shadow:0px 0px 44px -3px #b1eeb1;
+    --color-hover:#222222;
+}
+.light-mode{
     --header: linear-gradient(to bottom, #ffffff, #bababa);
+    --title-color:#161616;
     --bs-body-bg:#bababa;
     --color-font:#4c4c4c;
     --linhas:#7a7a7a;
     --destaque:#d30726;
     --box:#9e1529;
+    --shadow:0px 0px 44px -3px rgba(211,7,38,0.57);
+    --color-hover:white;
 }

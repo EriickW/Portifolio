@@ -28,9 +28,12 @@
             }
         }
         .project:hover{
-            border: 2px solid var(--box);
-            color: white;
-            box-shadow: 0px 0px 44px -3px rgba(211,7,38,0.57);
+            border: 2px solid var(--destaque);
+            
+            box-shadow: var(--shadow);
+            h3,p{
+                color: white;
+            }
         }
         button{
             margin-top: 40px;

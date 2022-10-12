@@ -9,11 +9,11 @@
         margin-bottom: 50px;
     }
     .box{
-        border: 2px solid var(--box);
+        border: 2px solid var(--destaque);
         background: transparent;
         width: 150px;
         height: 150px;
-        color:var(--box);
+        color:var(--destaque);
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -22,8 +22,8 @@
         font-size: 100px;
     }
     .box:hover{
-        background: var(--box);
-        color: white;
-        box-shadow: 0px 0px 44px -3px rgba(211,7,38,0.57);
+        background: var(--destaque);
+        color: var(--color-hover);
+        box-shadow: var(--shadow);
     }
 }
