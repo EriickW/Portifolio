@@ -33,6 +33,7 @@ button{
 
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease-in-out;
 }
 button:hover{
     background: var(--destaque);
@@ -59,7 +60,7 @@ button:hover{
         font-family: 'Noto Sans JP', sans-serif;
         line-height: 120px;
 
-        color: rgba(107, 107, 107, 0.267);
+        color: rgba(107, 107, 107, 0.13);
         display: flex;
         align-items: center;
     }
@@ -69,4 +70,5 @@ button:hover{
 @import "variaveis";
 @import "header";
 @import "main";
-
+@import "tecnologia";
+@import "project";

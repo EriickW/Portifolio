@@ -1,7 +1,7 @@
 header{
     width: 100%;
     background:var(--header);
-    height: 100vh;
+    min-height: 100vh;
     z-index: 1;
     h1{
         font-size: 70px;
