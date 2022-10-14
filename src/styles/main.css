@@ -240,6 +240,7 @@ header .img-container-header {
 
 .sec-project {
   min-height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,8 +254,6 @@ header .img-container-header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0;
-  margin: 0;
 }
 
 .sec-project .div-project {
@@ -267,7 +266,6 @@ header .img-container-header {
 
 .sec-project .div-project .project {
   min-height: 500px;
-  background: #000;
   min-width: 300px;
   max-width: 350px;
   border: 2px solid transparent;
@@ -289,6 +287,18 @@ header .img-container-header {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sec-project .div-project .project-content a:nth-child(1) {
+  background: url("../img/dune.png") center center/cover no-repeat;
 }
 
 .sec-project .div-project .project:hover {
@@ -303,5 +313,19 @@ header .img-container-header {
 
 .sec-project .div-project button {
   margin-top: 40px;
+}
+
+.main-project h2 {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.main-project .div-project {
+  margin-top: 0;
+}
+
+.main-project .div-project .project {
+  max-width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
