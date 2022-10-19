@@ -1,5 +1,9 @@
 #tecnologias{
     min-height: 100vh;
+    .sec-container{
+        flex-wrap: wrap;
+    }
+    
     .box-kanji{
         z-index: 0;
        
@@ -25,5 +29,13 @@
         background: var(--destaque);
         color: var(--color-hover);
         box-shadow: var(--shadow);
+    }
+    .boxes{
+        flex-wrap: wrap;
+        min-width:350px ;
+        width: 100%;
+    }
+    .text-tec{
+        min-width:300px ;
     }
 }

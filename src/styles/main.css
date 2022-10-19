@@ -101,7 +101,7 @@ nav ul li a:hover {
   src: url(fonts/Kashima_Demo.otf);
 }
 
-.dark-mode {
+.home {
   --title-color:#f7f7f7;
   --header: #222222;
   --bs-body-bg:#111111;
@@ -113,28 +113,36 @@ nav ul li a:hover {
   --color-hover:white;
 }
 
-.light-mode {
-  --header: linear-gradient(to bottom, #ffffff, #bababa);
-  --title-color:#161616;
-  --bs-body-bg:#bababa;
-  --color-font:#4c4c4c;
-  --linhas:#7a7a7a;
-  --destaque:#d30726;
+.project {
+  --title-color:#f7f7f7;
+  --header: #222222;
+  --bs-body-bg:#111111;
+  --color-font:#e9e9e9;
+  --linhas:#ffffff31;
+  --destaque:#ec7d9a;
   --box:#9e1529;
-  --shadow:0px 0px 44px -3px rgba(211,7,38,0.57);
+  --shadow:0px 0px 44px -3px #BF5E78;
   --color-hover:white;
 }
 
 header {
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.288)), to(rgba(0, 0, 0, 0.384))), url("../img/img-header.jpg") center center/cover fixed no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.384)), url("../img/img-header.jpg") center center/cover fixed no-repeat;
   min-height: 100vh;
   z-index: 1;
 }
 
 header h1 {
   font-size: 70px;
+}
+
+.home header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.288)), to(rgba(0, 0, 0, 0.384))), url("../img/img-header.jpg") center center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.384)), url("../img/img-header.jpg") center center/cover fixed no-repeat;
+}
+
+.project header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.521))), url("../img/header-projetos.jpg") center center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.521)), url("../img/header-projetos.jpg") center center/cover fixed no-repeat;
 }
 
 #sobre {
@@ -189,6 +197,11 @@ header h1 {
   min-height: 100vh;
 }
 
+#tecnologias .sec-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 #tecnologias .box-kanji {
   z-index: 0;
 }
@@ -223,6 +236,17 @@ header h1 {
   color: var(--color-hover);
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
+}
+
+#tecnologias .boxes {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 350px;
+  width: 100%;
+}
+
+#tecnologias .text-tec {
+  min-width: 300px;
 }
 
 .sec-project {
