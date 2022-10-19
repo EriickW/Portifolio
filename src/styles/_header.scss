@@ -1,23 +1,10 @@
 header{
     width: 100%;
-    background:var(--header);
+    background:linear-gradient(rgba(0, 0, 0, 0.288),
+    rgba(0, 0, 0, 0.384)),url("../img/img-header.jpg")center center/cover fixed no-repeat;
     min-height: 100vh;
     z-index: 1;
     h1{
         font-size: 70px;
     }
-    img{
-        width: 400px;
-        filter: saturate(0);
-        
-    }
-
-    .img-container-header{
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 0;
-    }
-
 }
