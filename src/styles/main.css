@@ -109,7 +109,7 @@ nav ul li a:hover {
   --linhas:#ffffff31;
   --destaque:#1ab354;
   --box:#9e1529;
-  --shadow:0px 0px 44px -3px #1ab354;
+  --shadow:0px 0px 15px -3px #1ab354;
   --color-hover:white;
 }
 
@@ -249,101 +249,61 @@ header h1 {
   min-width: 300px;
 }
 
-.sec-project {
+#projetos {
   min-height: 100vh;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.sec-project .div-project {
-  height: 100%;
+#projetos .sec-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.sec-project .div-project h2 {
-  font-size: 100px;
+#projetos h2 {
+  font-size: 80px;
+  margin-bottom: 50px;
 }
 
-.sec-project .div-project .project {
-  min-height: 500px;
-  min-width: 300px;
-  max-width: 350px;
-  border: 2px solid transparent;
-}
-
-.sec-project .div-project .project .text-projetct {
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.09);
+#projetos .box-projeto {
+  background: #0c0c0c;
+  width: 350px;
+  height: 260px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.8px);
-  -webkit-backdrop-filter: blur(3.8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid transparent;
 }
 
-.sec-project .div-project .project-content a:nth-child(1) {
-  background: url("../img/dune.png") center center/cover no-repeat;
-}
-
-.sec-project .div-project .project:hover {
-  border: 2px solid var(--destaque);
+#projetos .box-projeto:hover {
+  border: 1px solid var(--destaque);
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
 }
 
-.sec-project .div-project .project:hover h3, .sec-project .div-project .project:hover p {
-  color: white;
+#projetos a {
+  margin-top: 30px;
+  color: var(--destaque);
+  text-decoration: none;
 }
 
-.sec-project .div-project button {
-  margin-top: 40px;
+#projetos h3 {
+  font-size: 50px;
 }
 
-.main-project h2 {
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-
-.main-project .div-project {
-  margin-top: 0;
-}
-
-.main-project .div-project .project {
-  max-width: 100%;
-  height: 100%;
+#projetos p {
+  font-size: 17px;
+  text-align: justify;
 }
 
 .img-sec {
   width: 100%;
   height: 500px;
+}
+
+.img-sec#imgSec1 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.288)), to(rgba(0, 0, 0, 0.384))), url("../img/img-sec-1.jpg") center center/cover fixed no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.384)), url("../img/img-sec-1.jpg") center center/cover fixed no-repeat;
+}
+
+.img-sec#imgSec2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.459)), to(rgba(0, 0, 0, 0.384))), url("../img/img-sec-2.jpg") center center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.384)), url("../img/img-sec-2.jpg") center center/cover fixed no-repeat;
 }
 /*# sourceMappingURL=main.css.map */

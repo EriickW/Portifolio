@@ -30,3 +30,80 @@
         min-width: 300px;
     }
 }
+
+#tecnologias{
+    min-height: 100vh;
+    .sec-container{
+        flex-wrap: wrap;
+    }
+    
+    .box-kanji{
+        z-index: 0;
+       
+    }
+    h2{
+        font-size: 80px;
+        margin-bottom: 50px;
+    }
+    .box{
+        border: 2px solid var(--destaque);
+        background: transparent;
+        width: 150px;
+        height: 150px;
+        color:var(--destaque);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        font-size: 100px;
+    }
+    .box:hover{
+        background: var(--destaque);
+        color: var(--color-hover);
+        box-shadow: var(--shadow);
+    }
+    .boxes{
+        flex-wrap: wrap;
+        min-width:350px ;
+        width: 100%;
+    }
+    .text-tec{
+        min-width:300px ;
+    }
+}
+
+#projetos{
+    min-height: 100vh;
+    .sec-container{
+        flex-wrap: wrap;
+    }
+
+    h2{
+        font-size: 80px;
+        margin-bottom: 50px;
+    }
+    .box-projeto{
+        background: rgb(12, 12, 12);
+        width: 350px;
+        height: 260px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+    }
+    .box-projeto:hover{
+        border: 1px solid var(--destaque);
+        box-shadow: var(--shadow);
+    }
+    a{
+        margin-top: 30px;
+        color: var(--destaque);
+        text-decoration: none;
+    }
+    h3{
+        font-size: 50px;
+    }
+    p{
+        font-size: 17px;
+        text-align: justify;
+    }
+}
