@@ -121,7 +121,7 @@ nav ul li a:hover {
   --linhas:#ffffff31;
   --destaque:#ec7d9a;
   --box:#9e1529;
-  --shadow:0px 0px 44px -3px #BF5E78;
+  --shadow:0px 0px 15px -3px #BF5E78;
   --color-hover:white;
 }
 
@@ -253,6 +253,17 @@ header h1 {
   min-height: 100vh;
 }
 
+#projetos .linhaDiv {
+  width: 100%;
+  height: 50px;
+}
+
+#projetos .linhaDiv .linha-destaque {
+  width: 100px;
+  height: 50px;
+  background: #000;
+}
+
 #projetos .sec-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -292,9 +303,63 @@ header h1 {
   text-align: justify;
 }
 
+#sec-pg-project .linhaDiv {
+  width: 3px;
+  height: 100px;
+  margin-block: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(var(--destaque)), to(transparent));
+  background: linear-gradient(transparent, var(--destaque), transparent);
+}
+
+#sec-pg-project .sec-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#sec-pg-project h2 {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+#sec-pg-project .box-projeto {
+  background: #0c0c0c;
+  width: 350px;
+  height: 260px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+#sec-pg-project .box-projeto:hover {
+  border: 1px solid var(--destaque);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+#sec-pg-project a {
+  margin-top: 30px;
+  color: var(--destaque);
+  text-decoration: none;
+}
+
+#sec-pg-project h3 {
+  font-size: 50px;
+}
+
+#sec-pg-project p {
+  font-size: 17px;
+  text-align: justify;
+}
+
 .img-sec {
   width: 100%;
   height: 500px;
+}
+
+.img-sec span {
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.411);
+  font-weight: 800;
+  text-align: center;
 }
 
 .img-sec#imgSec1 {
