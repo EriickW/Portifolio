@@ -1,14 +1,24 @@
 
 *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     transition: all 0.5s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
 }
-.linha{
-    border-left: 1.5px solid var(--linhas);
-    border-right: 1.5px solid var(--linhas);
+:root{
+    font-size: 62.5%;
+    --font-color-white:white;
+    --font-color-black:black;
+
+}
+a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 
 }
 #body{
-    background:var(--bs-body-bg);
+
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -16,21 +26,18 @@
     width: 100%;
     height: 100%;
 }
-p{
-    font-family: 'Montserrat', sans-serif;
-    color:var(--color-font);
+.alinhamento{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline:auto;
+    padding-inline: 2%;
 }
-h1,h2,h3,h4{
-    color: var(--title-color);
-    font-family: 'Kashima', sans-serif;
-}
-
 button{
-    border: 1px solid var(--destaque);
+
     background: transparent;
     width: 150px;
     height: 40px;
-    color:var(--destaque);
+
     border-radius: 2px;
 
     font-weight: 500;
@@ -42,35 +49,7 @@ button:hover{
     color: var(--color-hover);
     box-shadow:var(--shadow);
 }
-.circle{
-    width: 300px;
-    height: 300px;
-    background: var(--destaque);
-    mix-blend-mode: multiply;
-    opacity: 0.8;
-    border-radius: 50%;
-    z-index: 2;
-    box-shadow: var(--shadow);
-}
-.box-kanji{
-    
-    z-index: 0;
-
-    .kanji{
-        font-size: 100px;
-        font-weight: 800;
-        font-family: 'Noto Sans JP', sans-serif;
-        line-height: 120px;
-
-        color: rgba(107, 107, 107, 0.13);
-        display: flex;
-        align-items: center;
-    }
-}
 
 @import "nav";
-@import "variaveis";
 @import "header";
-@import "main";
-@import "tecnologia";
-@import "_img-sec";
+
